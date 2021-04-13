@@ -37,7 +37,7 @@ public protocol BaseAuth0Service {
   func login()
   func logout()
 }
-@objc @_inheritsConvenienceInitializers public class HomeTurfWebViewController : UIKit.UIViewController, UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate, WebKit.WKScriptMessageHandler, WebKit.WKUIDelegate {
+@_inheritsConvenienceInitializers @objc public class HomeTurfWebViewController : UIKit.UIViewController, UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate, WebKit.WKScriptMessageHandler, WebKit.WKUIDelegate {
   public var auth0Service: HomeTurf.BaseAuth0Service?
   public var popView: (() -> ())?
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
