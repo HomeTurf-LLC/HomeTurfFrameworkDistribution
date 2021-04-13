@@ -11,6 +11,8 @@ import UIKit
 import UserNotifications
 import WebKit
 @_hasMissingDesignatedInitializers public class HomeTurfJavascriptService {
+  public func runJavascriptInWebView(action: Swift.String)
+  public func runJavascriptInWebView(action: Swift.String, data: Swift.String, sendDataAsString: Swift.Bool)
   @objc deinit
 }
 final public class HomeTurfWebView : SwiftUI.UIViewControllerRepresentable {
