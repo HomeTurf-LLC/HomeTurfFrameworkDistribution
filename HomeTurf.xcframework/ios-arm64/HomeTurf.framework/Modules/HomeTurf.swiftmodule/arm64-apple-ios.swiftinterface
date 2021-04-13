@@ -10,12 +10,12 @@ import SwiftUI
 import UIKit
 import UserNotifications
 import WebKit
-final public class HomeTurfJavascriptService {
-  public init()
+@_inheritsConvenienceInitializers @objc final public class HomeTurfJavascriptService : ObjectiveC.NSObject {
   final public func setWKWebView(wkWebView: WebKit.WKWebView)
   final public func runJavascriptInWebView(action: Swift.String)
   final public func runJavascriptInWebView(action: Swift.String, data: Swift.String, sendDataAsString: Swift.Bool)
   @objc deinit
+  @objc override dynamic public init()
 }
 final public class HomeTurfWebView : SwiftUI.UIViewControllerRepresentable {
   @SwiftUI.Environment final public var presentationMode: SwiftUI.Binding<SwiftUI.PresentationMode> {
@@ -30,19 +30,19 @@ final public class HomeTurfWebView : SwiftUI.UIViewControllerRepresentable {
   public typealias Coordinator = Swift.Void
   public typealias Body = Swift.Never
 }
-public protocol BaseAuth0Service {
-  init()
-  func setCredentials(audience: Swift.String, clientId: Swift.String, domain: Swift.String)
-  func setJavascriptService(javascriptService: HomeTurf.HomeTurfJavascriptService)
-  func login()
-  func logout()
+@objc public protocol BaseAuth0Service {
+  @objc init()
+  @objc func setCredentials(audience: Swift.String, clientId: Swift.String, domain: Swift.String)
+  @objc func setJavascriptService(javascriptService: HomeTurf.HomeTurfJavascriptService)
+  @objc func login()
+  @objc func logout()
 }
-@_inheritsConvenienceInitializers @objc public class HomeTurfWebViewController : UIKit.UIViewController, UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate, WebKit.WKScriptMessageHandler, WebKit.WKUIDelegate {
+@objc @_inheritsConvenienceInitializers public class HomeTurfWebViewController : UIKit.UIViewController, UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate, WebKit.WKScriptMessageHandler, WebKit.WKUIDelegate {
   public var auth0Service: HomeTurf.BaseAuth0Service?
   public var popView: (() -> ())?
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  public func setAuth0Service(customService: HomeTurf.BaseAuth0Service)
+  @objc public func setAuth0Service(customService: HomeTurf.BaseAuth0Service)
   @objc override dynamic open var shouldAutorotate: Swift.Bool {
     @objc get
   }

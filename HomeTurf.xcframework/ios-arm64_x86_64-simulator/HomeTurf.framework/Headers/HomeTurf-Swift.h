@@ -190,6 +190,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
 @import UIKit;
 @import WebKit;
 #endif
@@ -209,6 +210,23 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class HomeTurfJavascriptService;
+
+SWIFT_PROTOCOL("_TtP8HomeTurf16BaseAuth0Service_")
+@protocol BaseAuth0Service
+- (nonnull instancetype)init;
+- (void)setCredentialsWithAudience:(NSString * _Nonnull)audience clientId:(NSString * _Nonnull)clientId domain:(NSString * _Nonnull)domain;
+- (void)setJavascriptServiceWithJavascriptService:(HomeTurfJavascriptService * _Nonnull)javascriptService;
+- (void)login;
+- (void)logout;
+@end
+
+
+SWIFT_CLASS("_TtC8HomeTurf25HomeTurfJavascriptService")
+@interface HomeTurfJavascriptService : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSBundle;
 @class NSCoder;
 @class WKUserContentController;
@@ -218,6 +236,7 @@ SWIFT_CLASS("_TtC8HomeTurf25HomeTurfWebViewController")
 @interface HomeTurfWebViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, WKScriptMessageHandler, WKUIDelegate>
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)setAuth0ServiceWithCustomService:(id <BaseAuth0Service> _Nonnull)customService;
 @property (nonatomic, readonly) BOOL shouldAutorotate;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidAppear:(BOOL)animated;
@@ -425,6 +444,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
 @import UIKit;
 @import WebKit;
 #endif
@@ -444,6 +464,23 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class HomeTurfJavascriptService;
+
+SWIFT_PROTOCOL("_TtP8HomeTurf16BaseAuth0Service_")
+@protocol BaseAuth0Service
+- (nonnull instancetype)init;
+- (void)setCredentialsWithAudience:(NSString * _Nonnull)audience clientId:(NSString * _Nonnull)clientId domain:(NSString * _Nonnull)domain;
+- (void)setJavascriptServiceWithJavascriptService:(HomeTurfJavascriptService * _Nonnull)javascriptService;
+- (void)login;
+- (void)logout;
+@end
+
+
+SWIFT_CLASS("_TtC8HomeTurf25HomeTurfJavascriptService")
+@interface HomeTurfJavascriptService : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSBundle;
 @class NSCoder;
 @class WKUserContentController;
@@ -453,6 +490,7 @@ SWIFT_CLASS("_TtC8HomeTurf25HomeTurfWebViewController")
 @interface HomeTurfWebViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, WKScriptMessageHandler, WKUIDelegate>
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)setAuth0ServiceWithCustomService:(id <BaseAuth0Service> _Nonnull)customService;
 @property (nonatomic, readonly) BOOL shouldAutorotate;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidAppear:(BOOL)animated;
