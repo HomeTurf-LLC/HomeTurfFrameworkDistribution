@@ -24,6 +24,7 @@ final public class HomeTurfWebView : SwiftUI.UIViewControllerRepresentable {
   public init()
   final public func dismiss()
   final public func makeUIViewController(context: HomeTurf.HomeTurfWebView.Context) -> HomeTurf.HomeTurfWebViewController
+  final public func setAuth0Service(auth0Service: HomeTurf.BaseAuth0Service)
   final public func updateUIViewController(_ uiViewController: HomeTurf.HomeTurfWebViewController, context: HomeTurf.HomeTurfWebView.Context)
   @objc deinit
   public typealias UIViewControllerType = HomeTurf.HomeTurfWebViewController
