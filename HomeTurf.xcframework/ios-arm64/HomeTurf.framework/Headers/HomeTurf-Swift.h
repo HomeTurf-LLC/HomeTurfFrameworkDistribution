@@ -234,7 +234,7 @@ SWIFT_CLASS("_TtC8HomeTurf25HomeTurfWebViewController")
 @interface HomeTurfWebViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, WKScriptMessageHandler, WKUIDelegate>
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)setAuth0ServiceWithCustomService:(id <BaseAuth0Service> _Nonnull)customService;
+- (void)setAuth0ServiceWithAuth0Service:(id <BaseAuth0Service> _Nonnull)auth0Service;
 @property (nonatomic, readonly) BOOL shouldAutorotate;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidAppear:(BOOL)animated;
