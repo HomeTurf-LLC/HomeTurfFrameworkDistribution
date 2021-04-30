@@ -208,16 +208,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@class HomeTurfJavascriptService;
-
-SWIFT_PROTOCOL("_TtP8HomeTurf24HomeTurfBaseAuth0Service_")
-@protocol HomeTurfBaseAuth0Service
-- (void)setCredentialsWithAudience:(NSString * _Nonnull)audience clientId:(NSString * _Nonnull)clientId domain:(NSString * _Nonnull)domain;
-- (void)setJavascriptServiceWithJavascriptService:(HomeTurfJavascriptService * _Nonnull)javascriptService;
-- (void)login;
-- (void)logout;
-@end
-
 
 SWIFT_PROTOCOL("_TtP8HomeTurf30HomeTurfBaseOrientationUtility_")
 @protocol HomeTurfBaseOrientationUtility
@@ -243,6 +233,7 @@ SWIFT_CLASS("_TtC8HomeTurf25HomeTurfWebViewController")
 - (void)setOrientationUtilityWithOrientationUtility:(id <HomeTurfBaseOrientationUtility> _Nonnull)orientationUtility;
 @property (nonatomic, readonly) BOOL shouldAutorotate;
 - (void)viewWillAppear:(BOOL)animated;
+@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidLoad;
@@ -250,6 +241,11 @@ SWIFT_CLASS("_TtC8HomeTurf25HomeTurfWebViewController")
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 @end
 
+
+
+@interface UINavigationController (SWIFT_EXTENSION(HomeTurf))
+@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
