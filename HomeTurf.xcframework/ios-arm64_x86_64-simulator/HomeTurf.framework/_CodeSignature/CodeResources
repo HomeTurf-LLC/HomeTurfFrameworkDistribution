@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/HomeTurf.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5FIvp6HB1/Hp25I0nlTcFInbw5Y=
+		LrxiG+LjD9TV8Uv3OZ1ooK84HZE=
 		</data>
 		<key>Modules/HomeTurf.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/HomeTurf.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		5FIvp6HB1/Hp25I0nlTcFInbw5Y=
+		LrxiG+LjD9TV8Uv3OZ1ooK84HZE=
 		</data>
 		<key>Modules/HomeTurf.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/HomeTurf.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dPKRpiqripKw0w4dSldS1ya5I0E=
+		GTF/tfJq86wgmA1lZln5cjMe4zI=
 		</data>
 		<key>Modules/HomeTurf.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/HomeTurf.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		dPKRpiqripKw0w4dSldS1ya5I0E=
+		GTF/tfJq86wgmA1lZln5cjMe4zI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S3t85qa9XuXxTFHmlkk4nPDI0kPMHA18tWukKWIrvj8=
+			QOP0tUgkpFVx9XSk7SZA5/S310Jr4qlReDuhjS/DhBI=
 			</data>
 		</dict>
 		<key>Modules/HomeTurf.swiftmodule/arm64.swiftdoc</key>
@@ -124,7 +124,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S3t85qa9XuXxTFHmlkk4nPDI0kPMHA18tWukKWIrvj8=
+			QOP0tUgkpFVx9XSk7SZA5/S310Jr4qlReDuhjS/DhBI=
 			</data>
 		</dict>
 		<key>Modules/HomeTurf.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yjR8XRoDx1wx54CtA7+AwNeLRwOC/4tiFu1yGUe1wNY=
+			I1EmkAwIysKlb10NzRx0mxUhQuXJprvINnmqGj05Q18=
 			</data>
 		</dict>
 		<key>Modules/HomeTurf.swiftmodule/x86_64.swiftdoc</key>
@@ -166,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yjR8XRoDx1wx54CtA7+AwNeLRwOC/4tiFu1yGUe1wNY=
+			I1EmkAwIysKlb10NzRx0mxUhQuXJprvINnmqGj05Q18=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
